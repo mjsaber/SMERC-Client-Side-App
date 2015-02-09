@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60B37BA9-09F2-4142-A2F5-FFA26E6B2BAF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EVUser</RootNamespace>
+    <AssemblyName>EVUser</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Default Web Site/EVUser</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChargingBoxAndStation">
+      <HintPath>..\ControllerAndCollector VS2010\ChargingBoxAndStation\bin\Debug\ChargingBoxAndStation.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMap, Version=1.0.4295.21935, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GoogleMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Hammock.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock.ClientProfile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Hammock.ClientProfile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="TweetSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TweetSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\apple-touch-icon-157x157.png" />
+    <Content Include="Account\apple-touch-icon.png" />
+    <Content Include="Account\apple-touch-icon-precomposed.png" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\LoginButton.png" />
+    <Content Include="Account\login_top.png" />
+    <Content Include="Account\login_top_new.png" />
+    <Content Include="Account\login_top_test.png" />
+    <Content Include="Account\NewUserCreation.aspx" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="BasePage.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="Images\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="Images\apple-touch-icon-114x114.png" />
+    <Content Include="Images\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="Images\apple-touch-icon-144x144.png" />
+    <Content Include="Images\apple-touch-icon-157x157-precomposed.png" />
+    <Content Include="Images\apple-touch-icon-157x157.png" />
+    <Content Include="Images\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="Images\apple-touch-icon-57x57.png" />
+    <Content Include="Images\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="Images\apple-touch-icon-72x72.png" />
+    <Content Include="Images\apple-touch-icon-precomposed.png" />
+    <Content Include="Images\apple-touch-icon.png" />
+    <Content Include="Images\but_tweet_bird.png" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Images\icon_menu_tweet.png" />
+    <Content Include="Images\icon_smartplug.png" />
+    <Content Include="Images\menu_but_bg.png" />
+    <Content Include="Images\nav_download.png" />
+    <Content Include="Images\no_img_avail.png" />
+    <Content Include="Images\social_tw.png" />
+    <Content Include="Images\social_tw_color.png" />
+    <Content Include="Images\icon_page_changepassword.png" />
+    <Content Include="Images\nav_changepassword.png" />
+    <Content Include="Images\CancelSchedule.png" />
+    <Content Include="Images\ChangeEmail.png" />
+    <Content Include="Images\ChangePassword.png" />
+    <Content Include="Images\ChargingRecords.png" />
+    <Content Include="Images\ChargingStatus.png" />
+    <Content Include="Images\CheckSchedule.png" />
+    <Content Include="Images\confirm_icon_stopcharging.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\icon_header_home.png" />
+    <Content Include="Images\icon_header_logout.png" />
+    <Content Include="Images\icon_page_cancelschedule.png" />
+    <Content Include="Images\icon_page_chargingrecords.png" />
+    <Content Include="Images\icon_page_chargingstatus.png" />
+    <Content Include="Images\icon_page_checkschedule.png" />
+    <Content Include="Images\icon_page_error.gif" />
+    <Content Include="Images\icon_page_feedback.png" />
+    <Content Include="Images\icon_page_home.gif" />
+    <Content Include="Images\icon_page_mapofstations.png" />
+    <Content Include="Images\icon_page_moas.png" />
+    <Content Include="Images\icon_page_profile.png" />
+    <Content Include="Images\icon_page_schedulecharging.png" />
+    <Content Include="Images\icon_page_socialmedia.png" />
+    <Content Include="Images\icon_page_startcharging.png" />
+    <Content Include="Images\icon_page_stopcharging.png" />
+    <Content Include="Button.png" />
+    <Content Include="Images\MapOfStationsIcon.png" />
+    <Content Include="Images\menu_button01_mofs.png" />
+    <Content Include="Images\menu_button02_chargingstatus.png" />
+    <Content Include="Images\menu_button03_startcharging.png" />
+    <Content Include="Images\menu_button04_stopcharging.png" />
+    <Content Include="Images\menu_button05_schedulecharging.png" />
+    <Content Include="Images\menu_button06_checkschedule.png" />
+    <Content Include="Images\menu_button07_cancelschedule.png" />
+    <Content Include="Images\menu_button08_chargingrecords.png" />
+    <Content Include="Images\menu_button09_profile.png" />
+    <Content Include="Images\nav_feedback.png" />
+    <Content Include="Images\nav_moas.png" />
+    <Content Include="Images\nav_soclaimedia.png" />
+    <Content Include="Images\RetrievePassword.png" />
+    <Content Include="Images\RetrieveUsername.png" />
+    <Content Include="Images\ScheduleCharging.png" />
+    <Content Include="Images\Setup.png" />
+    <Content Include="Images\SMALL smerc.png" />
+    <Content Include="Images\StartCharging.png" />
+    <Content Include="Images\StopCharging.png" />
+    <Content Include="Images\WhiteCancelSChedule.png" />
+    <Content Include="Images\WhiteChangeEmail.png" />
+    <Content Include="Images\WhiteChangePassword.png" />
+    <Content Include="Images\WhiteChargingRecords.png" />
+    <Content Include="Images\WhiteChargingStatus.png" />
+    <Content Include="Images\WhiteCheckSchedule.png" />
+    <Content Include="Images\WhiteMapOfStations.png" />
+    <Content Include="Images\WhiteRetrievePassword.png" />
+    <Content Include="Images\WhiteRetrieveUsername.png" />
+    <Content Include="Images\WhiteScheduleCharging.png" />
+    <Content Include="Images\WhiteSetup.png" />
+    <Content Include="Images\WhiteStartCharging.png" />
+    <Content Include="Images\WhiteStopCharging.png" />
+    <Content Include="Profile.aspx" />
+    <Content Include="StationMap.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\NewUserCreation.aspx.cs">
+      <DependentUpon>NewUserCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\NewUserCreation.aspx.designer.cs">
+      <DependentUpon>NewUserCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\SiteA.Master.cs">
+      <DependentUpon>SiteA.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\SiteA.Master.designer.cs">
+      <DependentUpon>SiteA.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.aspx.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.aspx.designer.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StationMap.aspx.cs">
+      <DependentUpon>StationMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StationMap.aspx.designer.cs">
+      <DependentUpon>StationMap.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\SiteA.Master" />
+    <None Include="Properties\PublishProfiles\EVUser.pubxml" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49516</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteA.master.cs" Inherits="EVUser.SiteA" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<%--    <link rel="apple-touch-icon-precomposed" href="Images/apple-touch-icon-157x157.png"/>--%>
+    <link rel="apple-touch-icon-precomposed" href="http://wireless3.seas.ucla.edu/evuser/Account/apple-touch-icon-precomposed.png"/>
+    <title></title>
+    <link href="SiteA.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+<%--        <asp:Table ID="Table1" runat="server" Width="960px" HorizontalAlign="Center" CellPadding="0" CellSpacing="0">
+            <asp:TableRow runat="server" Height="75px">
+                <asp:TableCell ID="tcID" runat="server" HorizontalAlign="Left" BackColor="#007948" Width="650px" >
+                    <span style="font-size: xx-large; font-weight: bold;color:White " >&nbsp; <asp:Label ID="Label1" runat="server" Text="Welcome "></asp:Label> 
+<asp:LoginName ID="HeadLoginName" runat="server" />
+</span>
+                </asp:TableCell>
+                <asp:TableCell runat="server" Width="3px"></asp:TableCell>
+                <asp:TableCell ID="tcHome" runat="server" BackColor="#919192"><asp:ImageButton runat="server" PostBackUrl="~/Default.aspx" ImageAlign="Right" ImageUrl="~/Images/icon_header_home.png" ID="ibHome"></asp:ImageButton>
+</asp:TableCell>
+                <asp:TableCell runat="server" Width="3px">
+                    
+                </asp:TableCell>
+                <asp:TableCell ID="tcLogout" runat="server" BackColor="#7BA33C">
+                    
+                <asp:ImageButton ID="ibLogout" runat="server" 
+                        ImageUrl="~/Images/icon_header_logout.png" onclick="ImageButton1_Click" 
+                        ImageAlign="Right" />
+</asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>--%>
+
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="footer" style="font-size: x-large; font-weight: normal">
+            <asp:Image ID="Image1" runat="server" ImageUrl="SMALL smerc.png" Width="200px" />
+            <br />
+            <asp:Label ID="lblCopyRight" runat="server" Text="Label"></asp:Label>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
